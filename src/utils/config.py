@@ -48,7 +48,7 @@ class Config:
         # Analytics thresholds
         self.REVENUE_THRESHOLD_GOLD = 20000
         self.REVENUE_THRESHOLD_SILVER = 10000
-        self.REVENUE_THRESHOLD_PROMO = 10000
+        self.REVENUE_THRESHOLD_PROMO = 1000
         
         # Load environment variables if available
         self._load_environment_variables()

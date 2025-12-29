@@ -52,6 +52,8 @@ class RealTimeAnalyticsStreaming:
                 .config("spark.jars.packages", self.config.SPARK_JARS_PACKAGES) \
                 .config("spark.mongodb.output.uri", self.config.SPARK_MONGODB_URI) \
                 .config("spark.mongodb.input.uri", self.config.SPARK_MONGODB_URI) \
+                .config("spark.eventLog.gcMetrics.youngGenerationGarbageCollectors", "G1 Young Generation,G1 Concurrent GC") \
+                .config("spark.eventLog.gcMetrics.oldGenerationGarbageCollectors", "G1 Old Generation,G1 Concurrent GC") \
                 .getOrCreate()
         return self.spark
     
@@ -69,6 +71,8 @@ class RealTimeAnalyticsStreaming:
         """Initialize Spark session."""
         try:
             self.spark = self.create_spark_session()
+            # Set logging level using the recommended approach
+            self.spark.sparkContext.setLogLevel("WARN")
             logger.info(f"✅ Spark session initialized: {self.spark.sparkContext.appName}")
             logger.info("🚀 Spark streaming started – waiting for Kafka events...")
             return True
@@ -248,7 +252,11 @@ class RealTimeAnalyticsStreaming:
                         )
                     
                     # Join with time period and inventory data
-                    product_winners = comprehensive_sales.join(time_period_df, "product_id", "left") \
+                    # Rename conflicting columns to avoid ambiguity
+                    time_period_df_renamed = time_period_df \
+                        .withColumnRenamed("last_sale_date", "time_period_last_sale_date")
+                    
+                    product_winners = comprehensive_sales.join(time_period_df_renamed, "product_id", "left") \
                         .join(avg_stock_df, "product_id", "left") \
                         .withColumn("contribution_margin", col("total_profit") / col("total_revenue") * 100) \
                         .withColumn("stock_turnover", 
@@ -339,9 +347,12 @@ class RealTimeAnalyticsStreaming:
                     )
                     
                     # Enrich with product master data and calculate potential loss
+                    # Use qualified column names to avoid ambiguity
                     enriched_loss_list = loss_list.join(product_master, "product_id", "left") \
                         .withColumn("potential_loss", col("quantity") * col("buy_price")) \
                         .withColumn("potential_revenue_loss", col("quantity") * (col("sell_price") - col("buy_price"))) \
+                        .drop(product_master["buy_price"]) \
+                        .drop(product_master["sell_price"]) \
                         .withColumn("risk_type", 
                             when(col("expiry_date").isNotNull() & (col("expiry_date") < date_add(current_date(), 7)), "Expiring Soon")
                             .when(col("last_movement").isNotNull() & (col("last_movement") < date_sub(current_date(), 30)), "Dead Stock")
