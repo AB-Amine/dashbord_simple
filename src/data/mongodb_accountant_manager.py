@@ -596,8 +596,8 @@ class MongoDBAccountantManager:
                 'name': client['name'],
                 'email': client.get('email'),
                 'phone': client.get('phone'),
-                'total_revenue_generated': client['total_revenue_generated'],
-                'loyalty_tier': client['loyalty_tier'],
+                'total_revenue_generated': client.get('total_revenue_generated', 0.0),
+                'loyalty_tier': client.get('loyalty_tier', 'Standard'),
                 'source': 'mongodb_accountant',
                 'timestamp': self._get_current_timestamp()
             }

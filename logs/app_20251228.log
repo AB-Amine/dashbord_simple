@@ -1,0 +1,457 @@
+2025-12-28 15:04:32 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:04:50 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:05:56 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:06:07 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:07:05 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:09:15 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:09:15 - __main__ - INFO - 🚀 Starting Real-Time Economic Analytics Platform v2
+2025-12-28 15:09:15 - __main__ - ERROR - ❌ Unexpected error: No module named 'src_v2.exceptions.config_exception'
+Traceback (most recent call last):
+  File "/home/yahya-bouchak/dashbord_simple/src_v2/main.py", line 43, in main
+    app = create_application()
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/yahya-bouchak/dashbord_simple/src_v2/core/application.py", line 259, in create_application
+    config = ConfigManager()
+             ^^^^^^^^^^^^^^^
+  File "/home/yahya-bouchak/dashbord_simple/src_v2/config/config_manager.py", line 127, in __init__
+    _import_exceptions()
+  File "/home/yahya-bouchak/dashbord_simple/src_v2/config/config_manager.py", line 30, in _import_exceptions
+    from src_v2.exceptions.config_exception import ConfigException
+ModuleNotFoundError: No module named 'src_v2.exceptions.config_exception'
+2025-12-28 15:09:57 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:09:57 - __main__ - INFO - 🚀 Starting Real-Time Economic Analytics Platform v2
+2025-12-28 15:09:57 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:09:57 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:09:57 - src_v2.core.application - INFO - 🚀 Initializing application components...
+2025-12-28 15:09:57 - src_v2.core.application - ERROR - ❌ Failed to initialize components: No module named 'src_v2.data'
+2025-12-28 15:09:57 - __main__ - ERROR - ❌ Application error: AnalyticsException(GENERAL_ERROR): Component initialization failed
+2025-12-28 15:09:57 - __main__ - ERROR - Error Code: GENERAL_ERROR
+2025-12-28 15:09:57 - __main__ - ERROR - Context: {}
+2025-12-28 15:11:01 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:11:01 - __main__ - INFO - 🚀 Starting Real-Time Economic Analytics Platform v2
+2025-12-28 15:11:01 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:11:01 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:11:01 - src_v2.core.application - INFO - 🚀 Initializing application components...
+2025-12-28 15:11:01 - src_v2.core.application - WARNING - ⚠️  Data processors not available (this is expected for basic setup): No module named 'src_v2.data'
+2025-12-28 15:11:01 - src_v2.core.application - INFO - 📋 To enable full functionality, implement data processors in src_v2.data module
+2025-12-28 15:11:01 - src_v2.core.application - WARNING - ⚠️  Analytics services not available (this is expected for basic setup): No module named 'src_v2.analytics'
+2025-12-28 15:11:01 - src_v2.core.application - INFO - 📋 To enable full functionality, implement analytics services in src_v2.analytics module
+2025-12-28 15:11:01 - src_v2.core.application - INFO - ✅ Application components initialized successfully
+2025-12-28 15:11:01 - src_v2.core.application - INFO - 🚀 Application started successfully
+2025-12-28 15:11:01 - __main__ - INFO - 📊 Application Status: {'is_initialized': True, 'is_running': True, 'last_updated': datetime.datetime(2025, 12, 28, 15, 11, 1, 323186), 'error_count': 0, 'processed_records': 0, 'processors': [], 'services': []}
+2025-12-28 15:11:01 - __main__ - INFO - ✅ Application is running and ready to process data
+2025-12-28 15:13:39 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:13:39 - __main__ - INFO - 🚀 Starting Real-Time Economic Analytics Platform v2
+2025-12-28 15:13:39 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:13:39 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:13:39 - src_v2.core.application - INFO - 🚀 Initializing application components...
+2025-12-28 15:13:39 - src_v2.core.application - WARNING - ⚠️  Data processors not available (this is expected for basic setup): No module named 'src_v2.data'
+2025-12-28 15:13:39 - src_v2.core.application - INFO - 📋 To enable full functionality, implement data processors in src_v2.data module
+2025-12-28 15:13:39 - src_v2.core.application - WARNING - ⚠️  Analytics services not available (this is expected for basic setup): No module named 'src_v2.analytics'
+2025-12-28 15:13:39 - src_v2.core.application - INFO - 📋 To enable full functionality, implement analytics services in src_v2.analytics module
+2025-12-28 15:13:39 - src_v2.core.application - INFO - ✅ Application components initialized successfully
+2025-12-28 15:13:39 - src_v2.core.application - INFO - 🚀 Application started successfully
+2025-12-28 15:13:39 - __main__ - INFO - 📊 Application Status: {'is_initialized': True, 'is_running': True, 'last_updated': datetime.datetime(2025, 12, 28, 15, 13, 39, 205808), 'error_count': 0, 'processed_records': 0, 'processors': [], 'services': []}
+2025-12-28 15:13:39 - __main__ - INFO - ✅ Application is running and ready to process data
+2025-12-28 15:19:13 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:19:13 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:19:13 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:19:13 - src_v2.config.config_manager - INFO - ✅ Configuration validation passed
+2025-12-28 15:19:13 - SimpleTest - INFO - Test log message
+2025-12-28 15:19:13 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:19:13 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:19:13 - src_v2.core.application - INFO - 🚀 Initializing application components...
+2025-12-28 15:19:13 - src_v2.core.application - WARNING - ⚠️  Data processors not available (this is expected for basic setup): No module named 'src_v2.data'
+2025-12-28 15:19:13 - src_v2.core.application - INFO - 📋 To enable full functionality, implement data processors in src_v2.data module
+2025-12-28 15:19:13 - src_v2.core.application - WARNING - ⚠️  Analytics services not available (this is expected for basic setup): No module named 'src_v2.analytics'
+2025-12-28 15:19:13 - src_v2.core.application - INFO - 📋 To enable full functionality, implement analytics services in src_v2.analytics module
+2025-12-28 15:19:13 - src_v2.core.application - INFO - ✅ Application components initialized successfully
+2025-12-28 15:19:13 - src_v2.core.application - INFO - 🚀 Application started successfully
+2025-12-28 15:19:40 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:19:40 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:19:40 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:19:40 - src_v2.config.config_manager - INFO - ✅ Configuration validation passed
+2025-12-28 15:19:40 - SimpleTest - INFO - Test log message
+2025-12-28 15:19:40 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:19:40 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:19:40 - src_v2.core.application - INFO - 🚀 Initializing application components...
+2025-12-28 15:19:40 - src_v2.core.application - WARNING - ⚠️  Data processors not available (this is expected for basic setup): No module named 'src_v2.data'
+2025-12-28 15:19:40 - src_v2.core.application - INFO - 📋 To enable full functionality, implement data processors in src_v2.data module
+2025-12-28 15:19:40 - src_v2.core.application - WARNING - ⚠️  Analytics services not available (this is expected for basic setup): No module named 'src_v2.analytics'
+2025-12-28 15:19:40 - src_v2.core.application - INFO - 📋 To enable full functionality, implement analytics services in src_v2.analytics module
+2025-12-28 15:19:40 - src_v2.core.application - INFO - ✅ Application components initialized successfully
+2025-12-28 15:19:40 - src_v2.core.application - INFO - 🚀 Application started successfully
+2025-12-28 15:19:40 - src_v2.core.application - INFO - ✅ Application stopped gracefully
+2025-12-28 15:24:42 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:24:42 - __main__ - INFO - 🚀 Starting Real-Time Economic Analytics Platform v2
+2025-12-28 15:24:42 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:24:42 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:24:42 - src_v2.core.application - INFO - 🚀 Initializing application components...
+2025-12-28 15:24:42 - src_v2.core.application - WARNING - ⚠️  Data processors not available (this is expected for basic setup): No module named 'src_v2.data'
+2025-12-28 15:24:42 - src_v2.core.application - INFO - 📋 To enable full functionality, implement data processors in src_v2.data module
+2025-12-28 15:24:42 - src_v2.core.application - WARNING - ⚠️  Analytics services not available (this is expected for basic setup): No module named 'src_v2.analytics'
+2025-12-28 15:24:42 - src_v2.core.application - INFO - 📋 To enable full functionality, implement analytics services in src_v2.analytics module
+2025-12-28 15:24:42 - src_v2.core.application - INFO - ✅ Application components initialized successfully
+2025-12-28 15:24:42 - src_v2.core.application - INFO - 🚀 Application started successfully
+2025-12-28 15:24:42 - __main__ - INFO - 📊 Application Status: {'is_initialized': True, 'is_running': True, 'last_updated': datetime.datetime(2025, 12, 28, 15, 24, 42, 283487), 'error_count': 0, 'processed_records': 0, 'processors': [], 'services': []}
+2025-12-28 15:24:42 - __main__ - INFO - ✅ Application is running and ready to process data
+2025-12-28 15:28:08 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:28:08 - __main__ - INFO - 🚀 Starting Real-Time Economic Analytics Platform v2
+2025-12-28 15:28:08 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:28:08 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:28:08 - src_v2.core.application - INFO - 🚀 Initializing application components...
+2025-12-28 15:28:08 - src_v2.core.application - WARNING - ⚠️  Data processors not available (this is expected for basic setup): No module named 'src_v2.data'
+2025-12-28 15:28:08 - src_v2.core.application - INFO - 📋 To enable full functionality, implement data processors in src_v2.data module
+2025-12-28 15:28:08 - src_v2.core.application - WARNING - ⚠️  Analytics services not available (this is expected for basic setup): No module named 'src_v2.analytics'
+2025-12-28 15:28:08 - src_v2.core.application - INFO - 📋 To enable full functionality, implement analytics services in src_v2.analytics module
+2025-12-28 15:28:08 - src_v2.core.application - INFO - ✅ Application components initialized successfully
+2025-12-28 15:28:08 - src_v2.core.application - INFO - 🚀 Application started successfully
+2025-12-28 15:28:08 - __main__ - INFO - 📊 Application Status: {'is_initialized': True, 'is_running': True, 'last_updated': datetime.datetime(2025, 12, 28, 15, 28, 8, 870056), 'error_count': 0, 'processed_records': 0, 'processors': [], 'services': []}
+2025-12-28 15:28:08 - __main__ - INFO - ✅ Application is running and ready to process data
+2025-12-28 15:41:40 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:41:40 - __main__ - INFO - 🚀 Starting Real-Time Economic Analytics Platform v2
+2025-12-28 15:41:40 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:41:40 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:41:40 - src_v2.core.application - INFO - 🚀 Initializing application components...
+2025-12-28 15:41:40 - src_v2.core.application - WARNING - ⚠️  Data processors not available (this is expected for basic setup): No module named 'src_v2.data.kafka_data_processor'
+2025-12-28 15:41:40 - src_v2.core.application - INFO - 📋 To enable full functionality, implement data processors in src_v2.data module
+2025-12-28 15:41:40 - src_v2.core.application - WARNING - ⚠️  Analytics services not available (this is expected for basic setup): No module named 'src_v2.analytics.streamlit_visualization_service'
+2025-12-28 15:41:40 - src_v2.core.application - INFO - 📋 To enable full functionality, implement analytics services in src_v2.analytics module
+2025-12-28 15:41:40 - src_v2.core.application - INFO - ✅ Application components initialized successfully
+2025-12-28 15:41:40 - src_v2.core.application - INFO - 🚀 Application started successfully
+2025-12-28 15:41:40 - __main__ - INFO - 📊 Application Status: {'is_initialized': True, 'is_running': True, 'last_updated': datetime.datetime(2025, 12, 28, 15, 41, 40, 197224), 'error_count': 0, 'processed_records': 0, 'processors': [], 'services': []}
+2025-12-28 15:41:40 - __main__ - INFO - ✅ Application is running and ready to process data
+2025-12-28 15:43:34 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:43:34 - __main__ - INFO - 🚀 Starting Real-Time Economic Analytics Platform v2
+2025-12-28 15:43:34 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:43:34 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:43:34 - src_v2.core.application - INFO - 🚀 Initializing application components...
+2025-12-28 15:43:34 - src_v2.core.application - WARNING - ⚠️  Data processors not available (this is expected for basic setup): No module named 'src_v2.data.kafka_data_processor'
+2025-12-28 15:43:34 - src_v2.core.application - INFO - 📋 To enable full functionality, implement data processors in src_v2.data module
+2025-12-28 15:43:34 - src_v2.analytics.spark_analytics_service - ERROR - ❌ PySpark is not installed
+2025-12-28 15:43:34 - src_v2.core.application - ERROR - ❌ Failed to initialize components: AnalyticsException(MISSING_DEPENDENCY): PySpark dependency missing
+2025-12-28 15:43:34 - __main__ - ERROR - ❌ Application error: AnalyticsException(GENERAL_ERROR): Component initialization failed
+2025-12-28 15:43:34 - __main__ - ERROR - Error Code: GENERAL_ERROR
+2025-12-28 15:43:34 - __main__ - ERROR - Context: {}
+2025-12-28 15:44:54 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:44:54 - __main__ - INFO - 🚀 Starting Real-Time Economic Analytics Platform v2
+2025-12-28 15:44:54 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:44:54 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:44:54 - src_v2.core.application - INFO - 🚀 Initializing application components...
+2025-12-28 15:44:54 - src_v2.core.application - ERROR - ❌ Failed to initialize components: cannot access local variable 'ConnectionFailure' where it is not associated with a value
+2025-12-28 15:44:54 - __main__ - ERROR - ❌ Application error: AnalyticsException(GENERAL_ERROR): Component initialization failed
+2025-12-28 15:44:54 - __main__ - ERROR - Error Code: GENERAL_ERROR
+2025-12-28 15:44:54 - __main__ - ERROR - Context: {}
+2025-12-28 15:46:04 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:46:04 - __main__ - INFO - 🚀 Starting Real-Time Economic Analytics Platform v2
+2025-12-28 15:46:04 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:46:04 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:46:04 - src_v2.core.application - INFO - 🚀 Initializing application components...
+2025-12-28 15:46:04 - src_v2.data.mongo_data_processor - WARNING - ⚠️  PyMongo is not installed - MongoDB processor will be limited
+2025-12-28 15:46:04 - src_v2.data.mongo_data_processor - INFO - 📋 Install PyMongo for full MongoDB functionality: pip install pymongo
+2025-12-28 15:46:04 - src_v2.data.kafka_data_processor - ERROR - ❌ Confluent Kafka is not installed
+2025-12-28 15:46:04 - src_v2.core.application - ERROR - ❌ Failed to initialize components: AnalyticsException(MISSING_DEPENDENCY): Confluent Kafka dependency missing
+2025-12-28 15:46:04 - __main__ - ERROR - ❌ Application error: AnalyticsException(GENERAL_ERROR): Component initialization failed
+2025-12-28 15:46:04 - __main__ - ERROR - Error Code: GENERAL_ERROR
+2025-12-28 15:46:04 - __main__ - ERROR - Context: {}
+2025-12-28 15:46:41 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:46:41 - __main__ - INFO - 🚀 Starting Real-Time Economic Analytics Platform v2
+2025-12-28 15:46:41 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:46:41 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:46:41 - src_v2.core.application - INFO - 🚀 Initializing application components...
+2025-12-28 15:46:41 - src_v2.data.mongo_data_processor - WARNING - ⚠️  PyMongo is not installed - MongoDB processor will be limited
+2025-12-28 15:46:41 - src_v2.data.mongo_data_processor - INFO - 📋 Install PyMongo for full MongoDB functionality: pip install pymongo
+2025-12-28 15:46:41 - src_v2.data.kafka_data_processor - WARNING - ⚠️  Confluent Kafka is not installed - Kafka processor will be limited
+2025-12-28 15:46:41 - src_v2.data.kafka_data_processor - INFO - 📋 Install Confluent Kafka for full Kafka functionality: pip install confluent-kafka
+2025-12-28 15:46:41 - src_v2.core.application - INFO - ✅ Registered 2 data processors
+2025-12-28 15:46:41 - src_v2.analytics.spark_analytics_service - WARNING - ⚠️  PySpark is not installed - Spark analytics will be limited
+2025-12-28 15:46:41 - src_v2.analytics.spark_analytics_service - INFO - 📋 Install PySpark for full Spark functionality: pip install pyspark
+2025-12-28 15:46:41 - src_v2.analytics.streamlit_visualization_service - INFO - 🎨 Streamlit visualization service initialized
+2025-12-28 15:46:41 - src_v2.core.application - INFO - ✅ Registered 2 analytics services
+2025-12-28 15:46:41 - src_v2.core.application - INFO - ✅ Application components initialized successfully
+2025-12-28 15:46:41 - src_v2.core.application - INFO - 🚀 Application started successfully
+2025-12-28 15:46:41 - __main__ - INFO - 📊 Application Status: {'is_initialized': True, 'is_running': True, 'last_updated': datetime.datetime(2025, 12, 28, 15, 46, 41, 554633), 'error_count': 0, 'processed_records': 0, 'processors': ['MongoDataProcessor', 'KafkaDataProcessor'], 'services': ['SparkAnalyticsService', 'StreamlitVisualizationService']}
+2025-12-28 15:46:41 - __main__ - INFO - ✅ Application is running and ready to process data
+2025-12-28 15:46:54 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:46:55 - __main__ - INFO - 🎨 Starting Streamlit interface...
+2025-12-28 15:46:55 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:46:55 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:46:56 - src_v2.interface.streamlit_app - ERROR - ❌ Streamlit application error: 'ConfigManager' object has no attribute 'get_python_version'
+Traceback (most recent call last):
+  File "/home/yahya-bouchak/dashbord_simple/src_v2/interface/streamlit_app.py", line 641, in run_streamlit
+    st.write("**Python Version:**", config.get_python_version())
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigManager' object has no attribute 'get_python_version'
+2025-12-28 15:47:32 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:47:32 - __main__ - INFO - 🚀 Starting Real-Time Economic Analytics Platform v2
+2025-12-28 15:47:32 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:47:32 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:47:32 - src_v2.core.application - INFO - 🚀 Initializing application components...
+2025-12-28 15:47:32 - src_v2.data.mongo_data_processor - INFO - 🔌 Connecting to MongoDB: mongodb://localhost:27017/
+2025-12-28 15:47:32 - src_v2.data.mongo_data_processor - INFO - ✅ MongoDB connection established to database: stock_management
+2025-12-28 15:47:32 - src_v2.data.kafka_data_processor - INFO - 📡 Connecting to Kafka: localhost:9092
+2025-12-28 15:47:32 - src_v2.data.kafka_data_processor - INFO - ✅ Kafka connection established. Available topics: ['topic-clients', 'yahya-siem', 'siem_alert', 'siem', 'siem_alerts', 'topic-raw-sales', 'test-topic', 'siem-yahya', 'alertes_json', 'Yahya-siem', 'siia', 'siem-alerts', 'topic-inventory-updates', '__consumer_offsets', 'yahya']
+2025-12-28 15:47:32 - src_v2.data.kafka_data_processor - INFO - 📋 Subscribed to topics: ['topic-inventory-updates', 'topic-clients', 'topic-raw-sales', 'topic-analytics-results']
+2025-12-28 15:47:32 - src_v2.core.application - INFO - ✅ Registered 2 data processors
+2025-12-28 15:47:32 - src_v2.analytics.spark_analytics_service - INFO - 🔥 Initializing Spark session: RealTimeAnalyticsV2
+2025-12-28 15:47:32 - src_v2.analytics.spark_analytics_service - ERROR - ❌ Spark session initialization failed: 'SparkConfig' object has no attribute 'executor_memory'
+2025-12-28 15:47:32 - src_v2.analytics.spark_analytics_service - INFO - 📋 Spark analytics will run in fallback mode
+2025-12-28 15:47:32 - src_v2.analytics.streamlit_visualization_service - INFO - 🎨 Streamlit visualization service initialized
+2025-12-28 15:47:32 - src_v2.core.application - INFO - ✅ Registered 2 analytics services
+2025-12-28 15:47:32 - src_v2.core.application - INFO - ✅ Application components initialized successfully
+2025-12-28 15:47:32 - src_v2.core.application - INFO - 🚀 Application started successfully
+2025-12-28 15:47:32 - __main__ - INFO - 📊 Application Status: {'is_initialized': True, 'is_running': True, 'last_updated': datetime.datetime(2025, 12, 28, 15, 47, 32, 841525), 'error_count': 0, 'processed_records': 0, 'processors': ['MongoDataProcessor', 'KafkaDataProcessor'], 'services': ['SparkAnalyticsService', 'StreamlitVisualizationService']}
+2025-12-28 15:47:32 - __main__ - INFO - ✅ Application is running and ready to process data
+2025-12-28 15:48:35 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:48:35 - __main__ - ERROR - ❌ Spark is not installed or analytics module not found
+2025-12-28 15:48:35 - __main__ - INFO - 📋 Install Spark with: pip install pyspark
+2025-12-28 15:49:14 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:49:14 - __main__ - INFO - 📡 Starting Kafka consumer...
+2025-12-28 15:49:14 - src_v2.integration.kafka_consumer - INFO - 📡 Starting Kafka consumer application...
+2025-12-28 15:49:14 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:49:14 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:49:14 - src_v2.integration.kafka_consumer - INFO - 📡 Kafka Consumer Application initialized
+2025-12-28 15:49:14 - src_v2.integration.kafka_consumer - INFO - 🚀 Starting Kafka consumer in main thread...
+2025-12-28 15:49:14 - src_v2.integration.kafka_consumer - ERROR - ❌ Confluent Kafka is not installed
+2025-12-28 15:49:14 - src_v2.integration.kafka_consumer - ERROR - ❌ Kafka consumer error: AnalyticsException(MISSING_DEPENDENCY): Confluent Kafka dependency missing
+2025-12-28 15:49:14 - src_v2.integration.kafka_consumer - WARNING - ⚠️  Kafka consumer is not running
+2025-12-28 15:49:14 - src_v2.integration.kafka_consumer - ERROR - ❌ Kafka consumer application failed: AnalyticsException(MISSING_DEPENDENCY): Confluent Kafka dependency missing
+2025-12-28 15:49:14 - __main__ - ERROR - ❌ Failed to start Kafka consumer: AnalyticsException(KAFKA_APP_ERROR): Kafka consumer application failed
+2025-12-28 15:49:32 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:49:32 - __main__ - INFO - 🚀 Starting Real-Time Economic Analytics Platform v2
+2025-12-28 15:49:32 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:49:32 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:49:32 - src_v2.core.application - INFO - 🚀 Initializing application components...
+2025-12-28 15:49:32 - src_v2.data.mongo_data_processor - INFO - 🔌 Connecting to MongoDB: mongodb://localhost:27017/
+2025-12-28 15:49:32 - src_v2.data.mongo_data_processor - INFO - ✅ MongoDB connection established to database: stock_management
+2025-12-28 15:49:32 - src_v2.data.kafka_data_processor - INFO - 📡 Connecting to Kafka: localhost:9092
+2025-12-28 15:49:32 - src_v2.data.kafka_data_processor - INFO - ✅ Kafka connection established. Available topics: ['topic-clients', 'yahya-siem', 'siem_alert', 'siem', 'siem_alerts', 'topic-raw-sales', 'test-topic', 'siem-yahya', 'alertes_json', 'Yahya-siem', 'siia', 'siem-alerts', 'topic-inventory-updates', '__consumer_offsets', 'yahya']
+2025-12-28 15:49:32 - src_v2.data.kafka_data_processor - INFO - 📋 Subscribed to topics: ['topic-inventory-updates', 'topic-clients', 'topic-raw-sales', 'topic-analytics-results']
+2025-12-28 15:49:32 - src_v2.core.application - INFO - ✅ Registered 2 data processors
+2025-12-28 15:49:33 - src_v2.analytics.spark_analytics_service - INFO - 🔥 Initializing Spark session: RealTimeAnalyticsV2
+2025-12-28 15:49:33 - src_v2.analytics.spark_analytics_service - ERROR - ❌ Spark session initialization failed: 'SparkConfig' object has no attribute 'executor_memory'
+2025-12-28 15:49:33 - src_v2.analytics.spark_analytics_service - INFO - 📋 Spark analytics will run in fallback mode
+2025-12-28 15:49:33 - src_v2.analytics.streamlit_visualization_service - INFO - 🎨 Streamlit visualization service initialized
+2025-12-28 15:49:33 - src_v2.core.application - INFO - ✅ Registered 2 analytics services
+2025-12-28 15:49:33 - src_v2.core.application - INFO - ✅ Application components initialized successfully
+2025-12-28 15:49:33 - src_v2.core.application - INFO - 🚀 Application started successfully
+2025-12-28 15:49:33 - __main__ - INFO - 📊 Application Status: {'is_initialized': True, 'is_running': True, 'last_updated': datetime.datetime(2025, 12, 28, 15, 49, 33, 55035), 'error_count': 0, 'processed_records': 0, 'processors': ['MongoDataProcessor', 'KafkaDataProcessor'], 'services': ['SparkAnalyticsService', 'StreamlitVisualizationService']}
+2025-12-28 15:49:33 - __main__ - INFO - ✅ Application is running and ready to process data
+2025-12-28 15:50:19 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:50:20 - __main__ - INFO - 🎨 Starting Streamlit interface...
+2025-12-28 15:50:20 - __main__ - INFO - 📋 To run Streamlit properly, use: streamlit run src_v2/interface/streamlit_app.py
+2025-12-28 15:50:20 - __main__ - INFO - 🌐 The interface will be available at: http://localhost:8501
+2025-12-28 15:50:20 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:50:20 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:50:20 - src_v2.interface.streamlit_app - ERROR - ❌ Streamlit application error: st.session_state has no attribute "show_advanced". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization
+Traceback (most recent call last):
+  File "/home/yahya-bouchak/dashbord_simple/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 398, in __getitem__
+    return self._getitem(widget_id, key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yahya-bouchak/dashbord_simple/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 443, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yahya-bouchak/dashbord_simple/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 119, in __getattr__
+    return self[key]
+           ~~~~^^^^^
+  File "/home/yahya-bouchak/dashbord_simple/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 90, in __getitem__
+    return get_session_state()[key]
+           ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/yahya-bouchak/dashbord_simple/venv/lib/python3.12/site-packages/streamlit/runtime/state/safe_session_state.py", line 91, in __getitem__
+    return self._state[key]
+           ~~~~~~~~~~~^^^^^
+  File "/home/yahya-bouchak/dashbord_simple/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 400, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "show_advanced". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yahya-bouchak/dashbord_simple/src_v2/interface/streamlit_app.py", line 133, in run_streamlit
+    st.session_state.show_advanced = st.checkbox("Show Advanced Metrics", value=st.session_state.show_advanced)
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yahya-bouchak/dashbord_simple/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 121, in __getattr__
+    raise AttributeError(_missing_attr_error_message(key))
+AttributeError: st.session_state has no attribute "show_advanced". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization
+2025-12-28 15:52:05 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:52:05 - __main__ - INFO - 🎨 Starting Streamlit interface...
+2025-12-28 15:52:05 - __main__ - INFO - 📋 To run Streamlit properly, use: streamlit run src_v2/interface/streamlit_app.py
+2025-12-28 15:52:05 - __main__ - INFO - 🌐 The interface will be available at: http://localhost:8501
+2025-12-28 15:52:05 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:52:05 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:52:07 - src_v2.interface.streamlit_app - ERROR - ❌ Streamlit application error: 'ConfigManager' object has no attribute 'get_python_version'
+Traceback (most recent call last):
+  File "/home/yahya-bouchak/dashbord_simple/src_v2/interface/streamlit_app.py", line 641, in run_streamlit
+    st.write("**Python Version:**", config.get_python_version())
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigManager' object has no attribute 'get_python_version'
+2025-12-28 15:52:14 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:52:14 - __main__ - INFO - 🚀 Starting Real-Time Economic Analytics Platform v2
+2025-12-28 15:52:14 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:52:14 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:52:14 - src_v2.core.application - INFO - 🚀 Initializing application components...
+2025-12-28 15:52:14 - src_v2.data.mongo_data_processor - WARNING - ⚠️  PyMongo is not installed - MongoDB processor will be limited
+2025-12-28 15:52:14 - src_v2.data.mongo_data_processor - INFO - 📋 Install PyMongo for full MongoDB functionality: pip install pymongo
+2025-12-28 15:52:14 - src_v2.data.kafka_data_processor - WARNING - ⚠️  Confluent Kafka is not installed - Kafka processor will be limited
+2025-12-28 15:52:14 - src_v2.data.kafka_data_processor - INFO - 📋 Install Confluent Kafka for full Kafka functionality: pip install confluent-kafka
+2025-12-28 15:52:14 - src_v2.core.application - INFO - ✅ Registered 2 data processors
+2025-12-28 15:52:14 - src_v2.analytics.spark_analytics_service - WARNING - ⚠️  PySpark is not installed - Spark analytics will be limited
+2025-12-28 15:52:14 - src_v2.analytics.spark_analytics_service - INFO - 📋 Install PySpark for full Spark functionality: pip install pyspark
+2025-12-28 15:52:14 - src_v2.analytics.streamlit_visualization_service - INFO - 🎨 Streamlit visualization service initialized
+2025-12-28 15:52:14 - src_v2.core.application - INFO - ✅ Registered 2 analytics services
+2025-12-28 15:52:14 - src_v2.core.application - INFO - ✅ Application components initialized successfully
+2025-12-28 15:52:14 - src_v2.core.application - INFO - 🚀 Application started successfully
+2025-12-28 15:52:14 - __main__ - INFO - 📊 Application Status: {'is_initialized': True, 'is_running': True, 'last_updated': datetime.datetime(2025, 12, 28, 15, 52, 14, 644341), 'error_count': 0, 'processed_records': 0, 'processors': ['MongoDataProcessor', 'KafkaDataProcessor'], 'services': ['SparkAnalyticsService', 'StreamlitVisualizationService']}
+2025-12-28 15:52:14 - __main__ - INFO - ✅ Application is running and ready to process data
+2025-12-28 15:52:44 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:52:44 - __main__ - ERROR - ❌ Unknown command: streamli
+2025-12-28 15:52:46 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:52:47 - __main__ - INFO - 🎨 Starting Streamlit interface...
+2025-12-28 15:52:47 - __main__ - INFO - 📋 To run Streamlit properly, use: streamlit run src_v2/interface/streamlit_app.py
+2025-12-28 15:52:47 - __main__ - INFO - 🌐 The interface will be available at: http://localhost:8501
+2025-12-28 15:52:47 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:52:47 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:52:47 - src_v2.interface.streamlit_app - ERROR - ❌ Streamlit application error: st.session_state has no attribute "analytics_results". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization
+Traceback (most recent call last):
+  File "/home/yahya-bouchak/dashbord_simple/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 398, in __getitem__
+    return self._getitem(widget_id, key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yahya-bouchak/dashbord_simple/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 443, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yahya-bouchak/dashbord_simple/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 119, in __getattr__
+    return self[key]
+           ~~~~^^^^^
+  File "/home/yahya-bouchak/dashbord_simple/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 90, in __getitem__
+    return get_session_state()[key]
+           ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/yahya-bouchak/dashbord_simple/venv/lib/python3.12/site-packages/streamlit/runtime/state/safe_session_state.py", line 91, in __getitem__
+    return self._state[key]
+           ~~~~~~~~~~~^^^^^
+  File "/home/yahya-bouchak/dashbord_simple/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 400, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "analytics_results". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yahya-bouchak/dashbord_simple/src_v2/interface/streamlit_app.py", line 221, in run_streamlit
+    if st.session_state.analytics_results:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yahya-bouchak/dashbord_simple/venv/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 121, in __getattr__
+    raise AttributeError(_missing_attr_error_message(key))
+AttributeError: st.session_state has no attribute "analytics_results". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization
+2025-12-28 15:53:15 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:53:15 - __main__ - INFO - 🚀 Starting Real-Time Economic Analytics Platform v2
+2025-12-28 15:53:15 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:53:15 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:53:15 - src_v2.core.application - INFO - 🚀 Initializing application components...
+2025-12-28 15:53:15 - src_v2.data.mongo_data_processor - INFO - 🔌 Connecting to MongoDB: mongodb://localhost:27017/
+2025-12-28 15:53:15 - src_v2.data.mongo_data_processor - INFO - ✅ MongoDB connection established to database: stock_management
+2025-12-28 15:53:15 - src_v2.data.kafka_data_processor - INFO - 📡 Connecting to Kafka: localhost:9092
+2025-12-28 15:53:15 - src_v2.data.kafka_data_processor - INFO - ✅ Kafka connection established. Available topics: ['topic-clients', 'yahya-siem', 'siem_alert', 'siem', 'siem_alerts', 'topic-raw-sales', 'test-topic', 'siem-yahya', 'alertes_json', 'Yahya-siem', 'siia', 'siem-alerts', 'topic-inventory-updates', '__consumer_offsets', 'yahya']
+2025-12-28 15:53:15 - src_v2.data.kafka_data_processor - INFO - 📋 Subscribed to topics: ['topic-inventory-updates', 'topic-clients', 'topic-raw-sales', 'topic-analytics-results']
+2025-12-28 15:53:15 - src_v2.core.application - INFO - ✅ Registered 2 data processors
+2025-12-28 15:53:15 - src_v2.analytics.spark_analytics_service - INFO - 🔥 Initializing Spark session: RealTimeAnalyticsV2
+2025-12-28 15:53:15 - src_v2.analytics.spark_analytics_service - ERROR - ❌ Spark session initialization failed: 'SparkConfig' object has no attribute 'executor_memory'
+2025-12-28 15:53:15 - src_v2.analytics.spark_analytics_service - INFO - 📋 Spark analytics will run in fallback mode
+2025-12-28 15:53:15 - src_v2.analytics.streamlit_visualization_service - INFO - 🎨 Streamlit visualization service initialized
+2025-12-28 15:53:15 - src_v2.core.application - INFO - ✅ Registered 2 analytics services
+2025-12-28 15:53:15 - src_v2.core.application - INFO - ✅ Application components initialized successfully
+2025-12-28 15:53:15 - src_v2.core.application - INFO - 🚀 Application started successfully
+2025-12-28 15:53:15 - __main__ - INFO - 📊 Application Status: {'is_initialized': True, 'is_running': True, 'last_updated': datetime.datetime(2025, 12, 28, 15, 53, 15, 571968), 'error_count': 0, 'processed_records': 0, 'processors': ['MongoDataProcessor', 'KafkaDataProcessor'], 'services': ['SparkAnalyticsService', 'StreamlitVisualizationService']}
+2025-12-28 15:53:15 - __main__ - INFO - ✅ Application is running and ready to process data
+2025-12-28 15:54:14 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:54:14 - __main__ - INFO - 📡 Starting Kafka consumer...
+2025-12-28 15:54:14 - src_v2.integration.kafka_consumer - INFO - 📡 Starting Kafka consumer application...
+2025-12-28 15:54:14 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:54:14 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:54:14 - src_v2.integration.kafka_consumer - INFO - 📡 Kafka Consumer Application initialized
+2025-12-28 15:54:14 - src_v2.integration.kafka_consumer - INFO - 🚀 Starting Kafka consumer in main thread...
+2025-12-28 15:54:14 - src_v2.integration.kafka_consumer - INFO - 📡 Connecting to Kafka: localhost:9092
+2025-12-28 15:54:14 - src_v2.integration.kafka_consumer - INFO - ✅ Kafka connection established. Available topics: ['topic-clients', 'yahya-siem', 'siem_alert', 'siem', 'siem_alerts', 'topic-raw-sales', 'test-topic', 'siem-yahya', 'alertes_json', 'Yahya-siem', 'siia', 'siem-alerts', 'topic-inventory-updates', '__consumer_offsets', 'yahya']
+2025-12-28 15:54:14 - src_v2.integration.kafka_consumer - INFO - 📋 Subscribed to topics: ['topic-inventory-updates', 'topic-clients', 'topic-raw-sales', 'topic-analytics-results']
+2025-12-28 15:54:14 - src_v2.integration.kafka_consumer - INFO - 🚀 Starting Kafka message consumption...
+2025-12-28 15:54:14 - src_v2.integration.kafka_consumer - ERROR - ❌ Kafka consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: topic-analytics-results: Broker: Unknown topic or partition"}
+2025-12-28 15:54:52 - src_v2.integration.kafka_consumer - INFO - 
+🛑 Received keyboard interrupt, stopping consumer...
+2025-12-28 15:54:52 - src_v2.integration.kafka_consumer - INFO - 🛑 Stopping Kafka consumer...
+2025-12-28 15:54:52 - src_v2.integration.kafka_consumer - INFO - ✅ Kafka consumer closed
+2025-12-28 15:54:52 - src_v2.integration.kafka_consumer - INFO - ✅ Kafka consumer application completed
+2025-12-28 15:54:56 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:54:56 - __main__ - ERROR - ❌ Spark is not installed or analytics module not found
+2025-12-28 15:54:56 - __main__ - INFO - 📋 Install Spark with: pip install pyspark
+2025-12-28 15:56:54 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:56:54 - __main__ - INFO - 🚀 Starting Real-Time Economic Analytics Platform v2
+2025-12-28 15:56:54 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:56:54 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:56:54 - src_v2.core.application - INFO - 🚀 Initializing application components...
+2025-12-28 15:56:54 - src_v2.data.mongo_data_processor - WARNING - ⚠️  PyMongo is not installed - MongoDB processor will be limited
+2025-12-28 15:56:54 - src_v2.data.mongo_data_processor - INFO - 📋 Install PyMongo for full MongoDB functionality: pip install pymongo
+2025-12-28 15:56:54 - src_v2.data.kafka_data_processor - WARNING - ⚠️  Confluent Kafka is not installed - Kafka processor will be limited
+2025-12-28 15:56:54 - src_v2.data.kafka_data_processor - INFO - 📋 Install Confluent Kafka for full Kafka functionality: pip install confluent-kafka
+2025-12-28 15:56:54 - src_v2.core.application - INFO - ✅ Registered 2 data processors
+2025-12-28 15:56:54 - src_v2.analytics.spark_analytics_service - WARNING - ⚠️  PySpark is not installed - Spark analytics will be limited
+2025-12-28 15:56:54 - src_v2.analytics.spark_analytics_service - INFO - 📋 Install PySpark for full Spark functionality: pip install pyspark
+2025-12-28 15:56:54 - src_v2.analytics.streamlit_visualization_service - INFO - 🎨 Streamlit visualization service initialized
+2025-12-28 15:56:54 - src_v2.core.application - INFO - ✅ Registered 2 analytics services
+2025-12-28 15:56:54 - src_v2.core.application - INFO - ✅ Application components initialized successfully
+2025-12-28 15:56:54 - src_v2.core.application - INFO - 🚀 Application started successfully
+2025-12-28 15:56:54 - __main__ - INFO - 📊 Application Status: {'is_initialized': True, 'is_running': True, 'last_updated': datetime.datetime(2025, 12, 28, 15, 56, 54, 876083), 'error_count': 0, 'processed_records': 0, 'processors': ['MongoDataProcessor', 'KafkaDataProcessor'], 'services': ['SparkAnalyticsService', 'StreamlitVisualizationService']}
+2025-12-28 15:56:54 - __main__ - INFO - ✅ Application is running and ready to process data
+2025-12-28 15:57:01 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:57:01 - __main__ - INFO - 📡 Starting Kafka consumer...
+2025-12-28 15:57:01 - src_v2.integration.kafka_consumer - INFO - 📡 Starting Kafka consumer application...
+2025-12-28 15:57:01 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:57:01 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:57:01 - src_v2.integration.kafka_consumer - INFO - 📡 Kafka Consumer Application initialized
+2025-12-28 15:57:01 - src_v2.integration.kafka_consumer - INFO - 🚀 Starting Kafka consumer in main thread...
+2025-12-28 15:57:01 - src_v2.integration.kafka_consumer - ERROR - ❌ Confluent Kafka is not installed
+2025-12-28 15:57:01 - src_v2.integration.kafka_consumer - ERROR - ❌ Kafka consumer error: AnalyticsException(MISSING_DEPENDENCY): Confluent Kafka dependency missing
+2025-12-28 15:57:01 - src_v2.integration.kafka_consumer - WARNING - ⚠️  Kafka consumer is not running
+2025-12-28 15:57:01 - src_v2.integration.kafka_consumer - ERROR - ❌ Kafka consumer application failed: AnalyticsException(MISSING_DEPENDENCY): Confluent Kafka dependency missing
+2025-12-28 15:57:01 - __main__ - ERROR - ❌ Failed to start Kafka consumer: AnalyticsException(KAFKA_APP_ERROR): Kafka consumer application failed
+2025-12-28 15:57:08 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:57:08 - __main__ - INFO - 🎨 Starting Streamlit interface...
+2025-12-28 15:57:08 - __main__ - INFO - 📋 To run Streamlit properly, use: streamlit run src_v2/interface/streamlit_app.py
+2025-12-28 15:57:08 - __main__ - INFO - 🌐 The interface will be available at: http://localhost:8501
+2025-12-28 15:57:08 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:57:08 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:57:09 - src_v2.interface.streamlit_app - ERROR - ❌ Streamlit application error: 'ConfigManager' object has no attribute 'get_python_version'
+Traceback (most recent call last):
+  File "/home/yahya-bouchak/dashbord_simple/src_v2/interface/streamlit_app.py", line 654, in run_streamlit
+    st.write("**Python Version:**", config.get_python_version())
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigManager' object has no attribute 'get_python_version'
+2025-12-28 15:57:27 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:57:27 - __main__ - ERROR - ❌ Spark is not installed or analytics module not found
+2025-12-28 15:57:27 - __main__ - INFO - 📋 Install Spark with: pip install pyspark
+2025-12-28 15:57:30 - src_v2 - INFO - 🚀 Real-Time Economic Analytics Platform v2 initialized
+2025-12-28 15:57:30 - __main__ - INFO - 📡 Starting Kafka consumer...
+2025-12-28 15:57:30 - src_v2.integration.kafka_consumer - INFO - 📡 Starting Kafka consumer application...
+2025-12-28 15:57:30 - src_v2.config.config_manager - INFO - ✅ Default configuration initialized
+2025-12-28 15:57:30 - src_v2.config.config_manager - INFO - ✅ Configuration manager initialized
+2025-12-28 15:57:30 - src_v2.integration.kafka_consumer - INFO - 📡 Kafka Consumer Application initialized
+2025-12-28 15:57:30 - src_v2.integration.kafka_consumer - INFO - 🚀 Starting Kafka consumer in main thread...
+2025-12-28 15:57:30 - src_v2.integration.kafka_consumer - INFO - 📡 Connecting to Kafka: localhost:9092
+2025-12-28 15:57:30 - src_v2.integration.kafka_consumer - INFO - ✅ Kafka connection established. Available topics: ['topic-clients', 'yahya-siem', 'siem_alert', 'siem', 'siem_alerts', 'topic-raw-sales', 'test-topic', 'siem-yahya', 'alertes_json', 'Yahya-siem', 'siia', 'siem-alerts', 'topic-inventory-updates', '__consumer_offsets', 'yahya']
+2025-12-28 15:57:30 - src_v2.integration.kafka_consumer - INFO - ✅ Topic available: topic-inventory-updates
+2025-12-28 15:57:30 - src_v2.integration.kafka_consumer - INFO - ✅ Topic available: topic-clients
+2025-12-28 15:57:30 - src_v2.integration.kafka_consumer - INFO - ✅ Topic available: topic-raw-sales
+2025-12-28 15:57:30 - src_v2.integration.kafka_consumer - INFO - ✅ Topic available: topic-analytics-results
+2025-12-28 15:57:30 - src_v2.integration.kafka_consumer - INFO - 📋 Subscribed to available topics: ['topic-inventory-updates', 'topic-clients', 'topic-raw-sales', 'topic-analytics-results']
+2025-12-28 15:57:30 - src_v2.integration.kafka_consumer - INFO - 🚀 Starting Kafka message consumption...
+2025-12-28 15:57:30 - src_v2.integration.kafka_consumer - ERROR - ❌ Kafka consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: topic-analytics-results: Broker: Unknown topic or partition"}
+2025-12-28 15:57:33 - src_v2.integration.kafka_consumer - INFO - 
+🛑 Received keyboard interrupt, stopping consumer...
+2025-12-28 15:57:33 - src_v2.integration.kafka_consumer - INFO - 🛑 Stopping Kafka consumer...
+2025-12-28 15:57:33 - src_v2.integration.kafka_consumer - INFO - ✅ Kafka consumer closed
+2025-12-28 15:57:33 - src_v2.integration.kafka_consumer - INFO - ✅ Kafka consumer application completed

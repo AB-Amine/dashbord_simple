@@ -221,6 +221,9 @@ class RealTimeAnalyticsApplication:
             sales = self.mongodb_manager.get_sales_for_kafka()
             inventory = self.mongodb_manager.get_inventory_for_kafka()
             
+            # Debug logging to show what data we have
+            logger.info(f"📊 Data available for transfer: products={len(products)}, clients={len(clients)}, sales={len(sales)}, inventory={len(inventory)}")
+            
             # Transfer products to inventory topic
             if products:
                 logger.info(f"📦 Transferring {len(products)} products to Kafka")
@@ -264,11 +267,40 @@ class RealTimeAnalyticsApplication:
             logger.info("✅ MongoDB to Kafka data transfer completed successfully")
             logger.info("🚀 Spark Structured Streaming will automatically process the data")
             logger.info("📊 MongoDB analytics collections will be updated")
+            
+            # If we have data, ensure Spark analytics is running
+            if any([products, clients, sales, inventory]):
+                self._ensure_spark_analytics_running()
+            
             return True
             
         except Exception as e:
             logger.error(f"❌ MongoDB to Kafka transfer error: {e}")
             return False
+    
+    def _ensure_spark_analytics_running(self):
+        """Ensure Spark analytics processing is running."""
+        try:
+            # Import Spark analytics module
+            from analytics.spark_streaming_main import RealTimeAnalyticsStreaming
+            
+            # Create and start Spark processing in a separate thread
+            spark_app = RealTimeAnalyticsStreaming()
+            
+            # Initialize Spark
+            if spark_app.initialize_spark():
+                logger.info("✅ Spark analytics session initialized")
+                
+                # Start processing streams in a separate thread to avoid blocking
+                import threading
+                spark_thread = threading.Thread(target=spark_app.process_streams, daemon=True)
+                spark_thread.start()
+                logger.info("🚀 Spark analytics processing started in background thread")
+            else:
+                logger.error("❌ Failed to initialize Spark analytics")
+                
+        except Exception as e:
+            logger.error(f"❌ Error ensuring Spark analytics is running: {e}")
     
     def trigger_historical_reingestion(self) -> bool:
         """Trigger historical data re-ingestion.

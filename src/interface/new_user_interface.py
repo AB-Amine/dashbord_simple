@@ -666,34 +666,38 @@ class NewUserInterface:
                     st.write("🚨 **Complete Risk Analysis with Potential Loss Calculations**")
                     
                     # Create summary view
-                    risk_summary_cols = ['product_name', 'product_category', 'risk_category', 
-                                        'stock_quantity', 'potential_loss_amount', 
-                                        'days_until_expiry', 'days_since_last_movement']
+                    # Use actual column names from loss_risk_products
+                    risk_summary_cols = ['product_name', 'category', 'risk_level', 
+                                        'quantity', 'potential_loss', 
+                                        'days_until_expiry', 'days_since_movement']
                     
-                    risk_summary_df = loss_risk[risk_summary_cols].copy()
-                    if not risk_summary_df.empty:
+                    # Only use columns that exist
+                    available_cols = [col for col in risk_summary_cols if col in loss_risk.columns]
+                    
+                    if available_cols:
+                        risk_summary_df = loss_risk[available_cols].copy()
                         st.dataframe(risk_summary_df, use_container_width=True)
                     
                     # Risk metrics
                     col1, col2, col3 = st.columns(3)
                     
                     with col1:
-                        total_potential_loss = loss_risk['potential_loss_amount'].sum()
+                        total_potential_loss = loss_risk['potential_loss'].sum() if 'potential_loss' in loss_risk.columns else 0
                         st.metric("💰 Total Potential Loss", f"€{total_potential_loss:,.2f}", help="Total value of inventory at risk")
                     
                     with col2:
-                        avg_potential_loss = loss_risk['potential_loss_amount'].mean()
+                        avg_potential_loss = loss_risk['potential_loss'].mean() if 'potential_loss' in loss_risk.columns else 0
                         st.metric("📊 Avg Loss per Product", f"€{avg_potential_loss:,.2f}")
                     
                     with col3:
                         risk_count = len(loss_risk)
                         st.metric("⚠️ Products at Risk", risk_count)
                     
-                    # Risk category breakdown
-                    if 'risk_category' in loss_risk.columns:
-                        st.write("#### 📊 Risk Category Distribution")
-                        risk_category_counts = loss_risk['risk_category'].value_counts()
-                        st.bar_chart(risk_category_counts)
+                    # Risk level breakdown
+                    if 'risk_level' in loss_risk.columns:
+                        st.write("#### 📊 Risk Level Distribution")
+                        risk_level_counts = loss_risk['risk_level'].value_counts()
+                        st.bar_chart(risk_level_counts)
                         
                 else:
                     # Old structure (fallback)
@@ -909,8 +913,8 @@ class NewUserInterface:
                     st.write("💰 **Complete Risk Analysis with Potential Loss Calculations**")
                     
                     # Create risk summary
-                    risk_summary_cols = ['product_name', 'product_category', 'risk_category', 
-                                        'stock_quantity', 'potential_loss_amount', 
+                    risk_summary_cols = ['product_name', 'product_category', 'risk_level', 
+                                        'quantity', 'potential_loss', 
                                         'days_until_expiry', 'days_since_last_movement']
                     
                     risk_summary_df = loss_risk[risk_summary_cols].copy()
@@ -921,11 +925,11 @@ class NewUserInterface:
                     col1, col2, col3, col4 = st.columns(4)
                     
                     with col1:
-                        total_potential_loss = loss_risk['potential_loss_amount'].sum()
+                        total_potential_loss = loss_risk['potential_loss'].sum()
                         st.metric("💰 Total Potential Loss", f"€{total_potential_loss:,.2f}", help="Total value of inventory at risk")
                     
                     with col2:
-                        avg_potential_loss = loss_risk['potential_loss_amount'].mean()
+                        avg_potential_loss = loss_risk['potential_loss'].mean()
                         st.metric("📊 Avg Loss per Product", f"€{avg_potential_loss:,.2f}")
                     
                     with col3:
@@ -937,26 +941,26 @@ class NewUserInterface:
                         st.metric("💔 Potential Profit Loss", f"€{total_potential_profit_loss:,.2f}")
                     
                     # Risk category breakdown
-                    if 'risk_category' in loss_risk.columns:
+                    if 'risk_level' in loss_risk.columns:
                         st.write("#### 📊 Risk Category Distribution")
-                        risk_category_counts = loss_risk['risk_category'].value_counts()
-                        st.bar_chart(risk_category_counts)
+                        risk_level_counts = loss_risk['risk_level'].value_counts()
+                        st.bar_chart(risk_level_counts)
                     
                     # Detailed risk analysis by type
                     st.write("#### 🔍 Detailed Risk Analysis")
                     
                     # Expiring soon products
-                    expiring_soon = loss_risk[loss_risk['risk_category'] == 'Expiring Soon']
+                    expiring_soon = loss_risk[loss_risk['risk_level'] == 'Expiring Soon']
                     if not expiring_soon.empty:
                         st.write("**🗓️ Expiring Soon Products**")
-                        expiring_cols = ['product_name', 'days_until_expiry', 'stock_quantity', 'potential_loss_amount']
+                        expiring_cols = ['product_name', 'days_until_expiry', 'quantity', 'potential_loss']
                         st.dataframe(expiring_soon[expiring_cols], use_container_width=True)
                     
                     # Dead stock products
-                    dead_stock = loss_risk[loss_risk['risk_category'] == 'Dead Stock']
+                    dead_stock = loss_risk[loss_risk['risk_level'] == 'Dead Stock']
                     if not dead_stock.empty:
                         st.write("**💀 Dead Stock Products**")
-                        dead_stock_cols = ['product_name', 'days_since_last_movement', 'stock_quantity', 'potential_loss_amount']
+                        dead_stock_cols = ['product_name', 'days_since_last_movement', 'quantity', 'potential_loss']
                         st.dataframe(dead_stock[dead_stock_cols], use_container_width=True)
                         
                 else:

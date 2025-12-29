@@ -57,6 +57,8 @@ class SparkAnalytics:
         """Initialize Spark session."""
         try:
             self.spark = self.create_spark_session()
+            # Set logging level using the recommended approach
+            self.spark.sparkContext.setLogLevel("WARN")
             logger.info(f"Spark session initialized: {self.spark.sparkContext.appName}")
             return True
         except PySparkException as e:
@@ -329,6 +331,30 @@ class SparkAnalytics:
             logger.error(f"Error stopping streaming queries: {e}")
         except Exception as e:
             logger.error(f"Unexpected error stopping streaming queries: {e}")
+
+    def run_analytics(self) -> bool:
+        """Run batch analytics processing (non-streaming version for admin interface)."""
+        try:
+            logger.info("🚀 Starting batch analytics processing...")
+            
+            if not self.spark:
+                if not self.initialize_spark():
+                    logger.error("❌ Failed to initialize Spark for batch processing")
+                    return False
+            
+            # Run the streaming processing which includes batch analytics
+            success = self.process_streams()
+            
+            if success:
+                logger.info("✅ Batch analytics completed successfully")
+                return True
+            else:
+                logger.error("❌ Batch analytics failed")
+                return False
+                
+        except Exception as e:
+            logger.error(f"❌ Exception during batch analytics: {e}")
+            return False
 
     def shutdown(self):
         """Cleanly shutdown Spark session and streaming queries."""
